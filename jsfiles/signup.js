@@ -10,5 +10,4 @@ app.get("/:id", (req, res) => {
     res.sendFile(__dirname + "/html/"+req.params.id+".html");
 });
 
-
 module.exports = router;

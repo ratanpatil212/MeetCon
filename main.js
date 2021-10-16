@@ -25,9 +25,14 @@ app.get('/first_template', function(req, res){
 var things = require('./things');
 app.use('/things',things);
 
+
 // login page router where login.js is a module
-var login = require('./servers/login');
+var login = require('./jsfiles/login');
 app.use('/login',login);
+
+// sigup page router where login.js is a module
+var signup = require('./jsfiles/signup');
+app.use('/signup',signup);
 
 
 app.get("/:id", (req, res) => {
