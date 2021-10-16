@@ -1,0 +1,7 @@
+@import "main.css";
+@import "login.css";
+
+.title-image {
+  margin-left: 10rem;
+  width: 80%;
+}
