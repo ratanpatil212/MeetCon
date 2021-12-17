@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-var multer = require('multer');
-var upload = multer();
+const BodyParser = require('body-parser');
+app.use(BodyParser());
 
 app.use(express.static('public'))
 app.use(express.static('fonts'))
@@ -38,6 +38,8 @@ app.use('/signup',signup);
 app.get("/:id", (req, res) => {
     res.sendFile(__dirname + "/html/"+req.params.id+".html");
 });
+
+
 
 
 app.listen(port,(req, res) => {
