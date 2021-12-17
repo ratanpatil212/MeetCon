@@ -30,6 +30,10 @@ app.use('/things',things);
 var login = require('./jsfiles/login');
 app.use('/login',login);
 
+// homepage router where homepage.js is a module
+var homepage = require('./jsfiles/homepage');
+app.use('/homepage',homepage);
+
 // sigup page router where login.js is a module
 var signup = require('./jsfiles/signup');
 app.use('/signup',signup);
