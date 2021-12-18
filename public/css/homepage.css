@@ -1,0 +1,23 @@
+@import "main.css";
+@import "login.css";
+@import "signup.css";
+
+.navbar-bar {
+  background-color: #11324D;
+  margin: 0;
+  height: 7rem;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.link-icons {
+  margin: 0 2rem;
+}
+
+.fas {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #11324D;
+}

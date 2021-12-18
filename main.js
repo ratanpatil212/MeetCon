@@ -40,6 +40,10 @@ app.use('/things',things);
 var login = require('./jsfiles/login');
 app.use('/login',login);
 
+// homepage router where homepage.js is a module
+var homepage = require('./jsfiles/homepage');
+app.use('/homepage',homepage);
+
 // sigup page router where login.js is a module
 var signup = require('./jsfiles/signup');
 app.use('/signup',signup);
@@ -76,6 +80,7 @@ app.listen(port,(req, res) => {
     console.log("listening on port 3000");
 });
 
+
 // Mongodb Insert Data
 async function run(){
     try {
@@ -105,3 +110,4 @@ async function run(){
 
 
 // mongodb+srv://adminritzdb:<password>@cluster0.j61gc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
